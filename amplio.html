@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú con Submenús</title>
+  <style>
+    /* Estilos para el menú */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #333;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    li a:hover {
+      background-color: #111;
+    }
+    /* Estilos para los submenús */
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #444;
+    }
+    li:hover .submenu {
+      display: block;
+    }
+    .submenu a {
+      display: block;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+    }
+    .submenu a:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#">Inicio</a></li>
+  <li>
+    <a href="#">Actividades</a>
+    <ul class="submenu">
+      <li><a href="#">Actividad 1</a></li>
+      <li><a href="#">Actividad 2</a></li>
+      <li><a href="#">Actividad 3</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#">Recursos</a>
+    <ul class="submenu">
+      <li><a href="#">Recurso 1</a></li>
+      <li><a href="#">Recurso 2</a></li>
+      <li><a href="#">Recurso 3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Contacto</a></li>
+</ul>
+
+</body>
+</html>
